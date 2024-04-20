@@ -1,13 +1,6 @@
 #!/usr/bin/env python3
 
-#			(tips)  If this was useful to you.
-
-#                 BTC:	bc1qnqtqyqfu9rntykn299sp3pydr2vn3khwcvd58t
-#                ETH:	0x471c21cD1a37994636cc3e588E57ccfF252c9f57
-#    (TRC-20)  USDT:	TH4NgnVWR4mqNH5bgC5aq4qQqmnXdh87v3
-
-#			Convert BTC priv keys.
-#			HEX > WIF (Compreesed/Uncompressed)
+# Convert BTC priv keys. HEX > WIF (Compreesed/Uncompressed)
 
 def hex_to_wif(hex_string):
     import hashlib
