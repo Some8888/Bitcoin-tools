@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
-# Convert all BTC addr from file "Legacy" to rmd160 (Compressed btc addr only)
+# Convert BTC addr > rmd160 (Compressed and Uncompressed)
 
 import base58
-import time
 
 def decode_bitcoin_address(address):
     decoded = base58.b58decode(address)
@@ -24,12 +23,9 @@ def process_legacy_addresses(input_file, output_file):
             f.write(ripemd160_hash.hex() + '\n')
 
 def main():
-    input_file = "Legacy"
-    output_file = "rmd160"
+    input_file = "addr.txt"
+    output_file = "rmd160.txt"
     process_legacy_addresses(input_file, output_file)
-    print("Success", output_file)
+    print("Done!", output_file)
 
-if __name__ == "__main__":
-    main()
-
-input()
+main()
