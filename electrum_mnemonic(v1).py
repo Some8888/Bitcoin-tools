@@ -52,5 +52,3 @@ print(f"	WIF: {wif_uncompressed.decode()}")
 print("\n")
 print(f"	HEX: {private_key_hex}")
 print("\n")
-
-print("\n")
