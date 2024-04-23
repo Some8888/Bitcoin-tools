@@ -1,0 +1,5 @@
+enable rmd160:
+
+sudo apt install openssl
+
+sudo bash -c "sed -i '/default\s*=\s*default_sect/a \\\nlegacy = legacy_sect' /usr/lib/ssl/openssl.cnf && sed -i 's/#activate = 1/activate = 1/' /usr/lib/ssl/openssl.cnf && sed -i '/activate = 1/a \\\n\n[legacy_sect]\nactivate = 1' /usr/lib/ssl/openssl.cnf"
