@@ -1,4 +1,4 @@
-enable rmd160:
+(hashlib) enable rmd160:
 
 sudo apt install openssl
 
